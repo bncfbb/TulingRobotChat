@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="left|center"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="left|center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="10dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#FBC02D"
+                app:cardElevation="0dp">
+
+                <TextView
+                    android:id="@+id/chat_list_touxian_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.1cm"
+                    android:textColor="#fff"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"/>
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/chat_list_nick_left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Test" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
+            android:layout_gravity="left|center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/chat_list_head_left"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:civ_border_overlay="false" />
+
+            <cn.c4code.robotchat.widget.TriangleView
+                android:layout_width="16dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                app:color="#0285f0"
+                app:direction="left"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#0285f0"
+                app:cardElevation="0dp"
+                android:layout_marginLeft="-6dp"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:id="@+id/chat_list_message_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:text="Hello World!"
+                    android:padding="10dp"
+                    android:autoLink="web"/>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
